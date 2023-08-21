@@ -5,3 +5,5 @@ from django.shortcuts import render
 
 def index(request):
     return render(request, 'index.html')
+def doctor(request):
+    return render(request, 'doctor-view.html')
