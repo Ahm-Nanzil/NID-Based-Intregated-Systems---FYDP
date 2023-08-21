@@ -117,11 +117,23 @@
     <section class="inner-page">
       <div class="container">
         <div class="col-lg-4 col-md-6 footer-newsletter">
-          <p>Patient's NID</p>
-      
-          <form action= {% url 'patientviewreport'%} method="post">
-            <input type="integer" ><input class="d-none d-md-inline" type="submit" value="Search">
+          <form action="" method="post">
+            <label for="patient's_NID" name="patient's_NID">Patient's NID :</label>
+            <input type="integer" name="patient's_NID"><br><br>
+            <label for="patient's_name" name="patient's_name">Patient's Name:</label>
+            <input type="text" name="patient's_name"><br><br>
+            <label for="patient's_age" name="patient's_age">Patient's Age :</label>
+            <input type="integer" name="patient's_age"><br><br>
+            <label for="report_type" name="report_type">Report type   :</label>
+            <input type="text" name="report_type"><br><br>
+            
+            <label for="report" name="report">Report    :</label>
+            <input type="textfield" name="report"><br><br>
+            <input type="submit" value="Submit">       
+
           </form>
+      
+          
     
         </div>
         
