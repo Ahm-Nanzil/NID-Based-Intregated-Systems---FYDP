@@ -881,7 +881,8 @@
           </div>
 
           <div class="col-lg-6">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <form id="contact_care" action="/contact" method="post" role="form" class="php-email-form">
+              {% csrf_token %}
               <div class="row">
                 <div class="col-md-6 form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required="">
@@ -990,6 +991,8 @@
 
   {% comment %} Appoinment js file {% endcomment %}
   <script src="{% static "assets\Javascript\appoinment.js" %}"></script>
+  <script src="{% static "assets\Javascript\contact.js" %}"></script>
+
 </body>
 
 </html>

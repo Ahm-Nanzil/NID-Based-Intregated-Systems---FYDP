@@ -2,9 +2,24 @@ from django.db import models
 
 # Create your models here.
 # Create your models here.
-class userfuck(models.Model):
-    first_name = models.CharField(max_length=50)
-    last_name = models.CharField( max_length=50 )
-    user_mail= models.CharField(max_length=100)
-    username = models.CharField(max_length=100)
-    password = models.CharField( max_length=32 )
+class Appointment(models.Model):
+    name = models.CharField(max_length=255)
+    email = models.EmailField()
+    phone = models.CharField(max_length=20)
+    date = models.DateTimeField()
+    department = models.CharField(max_length=255)
+    doctor = models.CharField(max_length=255)
+    message = models.TextField(blank=True)  # Make it optional
+
+    def __str__(self):
+        return self.name
+
+class Contact(models.Model):
+    name = models.CharField(max_length=255)
+    email = models.EmailField()
+    subject = models.CharField(max_length=255)
+    message = models.TextField()
+    timestamp = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return self.name 
