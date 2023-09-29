@@ -104,7 +104,7 @@
         <div class="d-flex justify-content-between align-items-center">
           <h2>Doctor View</h2>
           <ol>
-            <li><a href={% url 'index'%}>Home</a></li>
+            <li><a href={% url 'home'%}>Home</a></li>
             <li>Doctor Page</li>
           </ol>
         </div>
@@ -120,6 +120,7 @@
           <p>Patient's NID</p>
       
           <form action= {% url 'doctorviewpatientreport'%} method="post">
+            {% csrf_token %}
             <input type="integer" ><input class="d-none d-md-inline" type="submit" value="Search">
           </form>
     

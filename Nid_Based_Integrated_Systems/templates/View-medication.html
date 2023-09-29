@@ -121,7 +121,24 @@
           <p>Patient's Name:Mr. salim</p>
           <p>Patient's Age: 45</p><br><br>
           <table class='ui celled striped unstackable  collapsing table' style='margin: 0 auto;'>
-            <thead><tr><th>Start Date  </th> <th>End Date  </th> <th>report_type  </th> <th>report  </th></tr> </thead></table>      
+            <thead>
+              <tr>
+              <th>Start Date  </th> 
+              <th>End Date  </th> 
+              <th>report_type  </th> 
+              <th>report  </th>
+              </tr> 
+            
+            </thead>
+            {% for Medication in newmedication %}
+              <tr>
+                <td>{{Medication.StartDate}} </td> 
+                <td>{{Medication.EndDate}}  </td> 
+                <td>{{Medication.DiseaseType}}  </td> 
+                <td>{{Medication.Medication}}</td>
+              </tr>
+            {% endfor %}
+          </table>      
           
     
         </div>

@@ -104,7 +104,7 @@
         <div class="d-flex justify-content-between align-items-center">
           <h2>Doctor View</h2>
           <ol>
-            <li><a href={% url 'index'%}>Home</a></li>
+            <li><a href= { % url 'home'% }>Home</a></li>
             <li>Doctor Page</li>
           </ol>
         </div>
@@ -119,13 +119,15 @@
     <section class="inner-page">
       <div class="container">
         <div class="col-lg-4 col-md-6 footer-newsletter">
-          <form action="" method="post">
-            <label for="patient's_NID" name="patient's_NID">Patient's NID :</label>
-            <input type="integer" name="patient's_NID"><br><br>
-            <label for="patient's_name" name="patient's_name">Patient's Name:</label>
-            <input type="text" name="patient's_name"><br><br>
-            <label for="patient's_age" name="patient's_age">Patient's Age :</label>
-            <input type="integer" name="patient's_age"><br><br>
+          <form action="/Prescription" method="POST">
+            {% csrf_token %}
+            
+            <label for="patient_NID" name="patient_NID">Patient's NID :</label>
+            <input type="integer" name="patient_NID"><br><br>
+            <label for="patient_name" name="patient_name">Patient's Name:</label>
+            <input type="text" name="patient_name"><br><br>
+            <label for="patient_age" name="patient_age">Patient's Age :</label>
+            <input type="integer" name="patient_age"><br><br>
             <label for="start_date" name="start_date">Start date   :</label>
             <input type="text" name="start_date"><br><br>
             <label for="end_date" name="end_date">End date    :</label>
@@ -133,7 +135,7 @@
             <label for="disease_type" name="disease_type">Disease type  :</label>
             <input type="text" name="disease_type"><br><br>
             <label for="medications" name="medications">Medication    :</label>
-            <input type="textfield" name="medications"><br><br>
+            <input type="text" name="medications"><br><br>
             <input type="submit" value="Submit">       
 
           </form>
