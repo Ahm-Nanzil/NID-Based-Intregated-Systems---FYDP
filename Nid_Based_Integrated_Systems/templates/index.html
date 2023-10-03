@@ -47,7 +47,52 @@
     </div>
   </div>
 
-  <!-- ======= Header ======= -->
+  {% comment %} login page {% endcomment %}
+  <div class="icons">
+    <!-- <div class="fas fa-bars" id="menu-btn"></div>
+    <a href="cartmenu.php" class="fas fa-shopping-cart"><div class="box"></div></a> -->
+
+    <div class="fas fa-user" id="login-btn"></div>
+</div>
+ 
+  <form action="" class="login-form">
+    <h3>sign in</h3>
+    <input type="email" name="" placeholder="enter your email" id="" class="box">
+    <input type="password" name="" placeholder="enter your password" id="" class="box">
+    <ul>
+      {% for user in users %}
+          <li>{{ user.firstname }} {{ user.lastname }} ({{ user.username }})</li>
+      {% endfor %}
+  </ul>
+    <div class="remember">
+        <input type="checkbox" name="" id="remember-me">
+        <label for="remember-me">remember me</label>
+    </div>
+    <input type="submit" value="sign in" class="btn">
+    <div class="links">
+        <a href="#">forget password</a>
+        <a href="#">sign up</a>
+    </div>
+</form> 
+
+<form action="" class="login-form">
+  <h3>sign in</h3>
+  <input type="email" name="" placeholder="enter your email" id="" class="box">
+  <input type="password" name="" placeholder="enter your password" id="" class="box">
+  <div class="remember">
+      <input type="checkbox" name="" id="remember-me">
+      <label for="remember-me">remember me</label>
+  </div>
+  <input type="submit" value="sign in" class="btn">
+  <div class="links">
+      <a href="#">forget password</a>
+      <a href="#">sign up</a>
+  </div>
+</form>
+
+
+<a href="{% url 'login' %}"><button>Go to login</button></a>
+<!-- ======= Header ======= -->
   <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center">
 
