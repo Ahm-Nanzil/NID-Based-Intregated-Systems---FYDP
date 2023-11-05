@@ -19,19 +19,3 @@ class Appointment(models.Model):
     def __str__(self):
         return self.name
 
-class Contact(models.Model):
-    name = models.CharField(max_length=255)
-    email = models.EmailField()
-    subject = models.CharField(max_length=255)
-    message = models.TextField()
-    timestamp = models.DateTimeField(auto_now_add=True)
-
-    def __str__(self):
-        return self.name 
-
-
-
-class CustomUserCreationForm(UserCreationForm):
-    class Meta(UserCreationForm.Meta):
-        model = User
-        fields = UserCreationForm.Meta.fields + ('email',)

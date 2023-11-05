@@ -1,6 +1,4 @@
 from django.apps import AppConfig
 
+# Create your apps here.
 
-class MeditechConfig(AppConfig):
-    default_auto_field = 'django.db.models.BigAutoField'
-    name = 'meditech'

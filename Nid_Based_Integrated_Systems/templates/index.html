@@ -1,4 +1,3 @@
-{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,31 +5,37 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>TechMed</title>
+  <title>Medicio Bootstrap Template - Index</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="{% static "assets/img/favicon.avif" %}" rel="icon">
-  <link href="{% static "assets/img/apple-touch-icon.png" %}" rel="apple-touch-icon">
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
-  <link href="{% static "assets/vendor/fontawesome-free/css/all.min.css" %}" rel="stylesheet">
-  <link href="{% static "assets/vendor/animate.css/animate.min.css" %}" rel="stylesheet">
-  <link href="{% static "assets/vendor/aos/aos.css" %}" rel="stylesheet">
-  <link href="{% static "assets/vendor/bootstrap/css/bootstrap.min.css" %}" rel="stylesheet">
-  <link href="{% static "assets/vendor/bootstrap-icons/bootstrap-icons.css" %}" rel="stylesheet">
-  <link href="{% static "assets/vendor/boxicons/css/boxicons.min.css" %}" rel="stylesheet">
-  <link href="{% static "assets/vendor/glightbox/css/glightbox.min.css" %}" rel="stylesheet">
-  <link href="{% static "assets/vendor/swiper/swiper-bundle.min.css" %}" rel="stylesheet">
+  <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
-  <link href="{% static "assets/css/style.css" %}" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
 
- 
+  <!-- =======================================================
+  * Template Name: Medicio
+  * Updated: May 30 2023 with Bootstrap v5.3.0
+  * Template URL: https://bootstrapmade.com/medicio-free-bootstrap-theme/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
 </head>
 
 <body>
@@ -42,61 +47,16 @@
         <i class="bi bi-clock"></i> Monday - Saturday, 8AM to 10PM
       </div>
       <div class="d-flex align-items-center">
-        <i class="bi bi-phone"></i> Call us now +8801706211023
+        <i class="bi bi-phone"></i> Call us now +1 5589 55488 55
       </div>
     </div>
   </div>
 
-  {% comment %} login page {% endcomment %}
-  <div class="icons">
-    <!-- <div class="fas fa-bars" id="menu-btn"></div>
-    <a href="cartmenu.php" class="fas fa-shopping-cart"><div class="box"></div></a> -->
-
-    <div class="fas fa-user" id="login-btn"></div>
-</div>
- 
-  <form action="" class="login-form">
-    <h3>sign in</h3>
-    <input type="email" name="" placeholder="enter your email" id="" class="box">
-    <input type="password" name="" placeholder="enter your password" id="" class="box">
-    <ul>
-      {% for user in users %}
-          <li>{{ user.firstname }} {{ user.lastname }} ({{ user.username }})</li>
-      {% endfor %}
-  </ul>
-    <div class="remember">
-        <input type="checkbox" name="" id="remember-me">
-        <label for="remember-me">remember me</label>
-    </div>
-    <input type="submit" value="sign in" class="btn">
-    <div class="links">
-        <a href="#">forget password</a>
-        <a href="#">sign up</a>
-    </div>
-</form> 
-
-<form action="" class="login-form">
-  <h3>sign in</h3>
-  <input type="email" name="" placeholder="enter your email" id="" class="box">
-  <input type="password" name="" placeholder="enter your password" id="" class="box">
-  <div class="remember">
-      <input type="checkbox" name="" id="remember-me">
-      <label for="remember-me">remember me</label>
-  </div>
-  <input type="submit" value="sign in" class="btn">
-  <div class="links">
-      <a href="#">forget password</a>
-      <a href="#">sign up</a>
-  </div>
-</form>
-
-
-<a href="{% url 'login' %}"><button>Go to login</button></a>
-<!-- ======= Header ======= -->
+  <!-- ======= Header ======= -->
   <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center">
 
-      <a href="index.html" class="logo me-auto"><img src="{% static "assets/img/logo.png" %}" alt=""></a>
+      <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt=""></a>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <h1 class="logo me-auto"><a href="index.html">Medicio</a></h1> -->
 
@@ -143,29 +103,28 @@
       <div class="carousel-inner" role="listbox">
 
         <!-- Slide 1 -->
-
-        <div class="carousel-item active" style="background-image: url('{% static "assets/img/slide/slide-1.jpg" %}')">
+        <div class="carousel-item active" style="background-image: url(assets/img/slide/slide-1.jpg)">
           <div class="container">
-            <h2>WELCOME TO SMART  <span>HEALTH CARE</span></h2>
-            <p>Ease your healthcare problems with technology.</p>
+            <h2>Welcome to <span>Medicio</span></h2>
+            <p>Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel.</p>
             <a href="#about" class="btn-get-started scrollto">Read More</a>
           </div>
         </div>
 
         <!-- Slide 2 -->
-        <div class="carousel-item" style="background-image: url('{% static "assets/img/slide/slide-2.jpg" %}')">
+        <div class="carousel-item" style="background-image: url(assets/img/slide/slide-2.jpg)">
           <div class="container">
-            <h2>Better Healthcare, Better Tomorrow</h2>
-            <p>Pioneering a brighter future through advanced medical solutions and unwavering dedication to your well-being.</p>
+            <h2>Lorem Ipsum Dolor</h2>
+            <p>Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel.</p>
             <a href="#about" class="btn-get-started scrollto">Read More</a>
           </div>
         </div>
 
         <!-- Slide 3 -->
-        <div class="carousel-item" style="background-image: url('{% static "assets/img/slide/slide-3.jpg" %}')">
+        <div class="carousel-item" style="background-image: url(assets/img/slide/slide-3.jpg)">
           <div class="container">
-            <h2>Best Care Facility For Everyone</h2>
-            <p>Embrace the epitome of care at the Best Care Facility, where compassion and expertise intertwine to create an unrivaled experience of well-being and support.</p>
+            <h2>Sequi ea ut et est quaerat</h2>
+            <p>Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel.</p>
             <a href="#about" class="btn-get-started scrollto">Read More</a>
           </div>
         </div>
@@ -193,32 +152,32 @@
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
               <div class="icon"><i class="fas fa-heartbeat"></i></div>
-              <h4 class="title"><a href="">Vitality</a></h4>
-              <p class="description">Nurturing your well-being with a focus on cardiac care and vitality.</p>
+              <h4 class="title"><a href="">Lorem Ipsum</a></h4>
+              <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
             </div>
           </div>
 
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
               <div class="icon"><i class="fas fa-pills"></i></div>
-              <h4 class="title"><a href="">Pharmaceuticals</a></h4>
-              <p class="description"> Offering effective medications and healing remedies for your optimal health.</p>
+              <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
+              <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
             </div>
           </div>
 
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
               <div class="icon"><i class="fas fa-thermometer"></i></div>
-              <h4 class="title"><a href="">Monitoring</a></h4>
-              <p class="description"> Using advanced thermometry for accurate health assessments and care.</p>
+              <h4 class="title"><a href="">Magni Dolores</a></h4>
+              <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
             </div>
           </div>
 
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="400">
               <div class="icon"><i class="fas fa-dna"></i></div>
-              <h4 class="title"><a href="">Biotechnology</a></h4>
-              <p class="description">Harnessing the power of DNA to shape personalized healthcare for you.</p>
+              <h4 class="title"><a href="">Nemo Enim</a></h4>
+              <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
             </div>
           </div>
 
@@ -233,7 +192,7 @@
 
         <div class="text-center">
           <h3>In an emergency? Need help now?</h3>
-          <p>Trust our rapid response team at your service, providing immediate assistance and expert care to ensure your safety and well-being when it matters most.</p>
+          <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           <a class="cta-btn scrollto" href="#appointment">Make an Make an Appointment</a>
         </div>
 
@@ -246,25 +205,28 @@
 
         <div class="section-title">
           <h2>About Us</h2>
-          <p>At our core, delivering excellence in service is our unwavering commitment. Count on us to provide you with the utmost care, attention to detail, and a seamless experience, ensuring you receive nothing short of the best quality service.</p>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
         </div>
 
         <div class="row">
           <div class="col-lg-6" data-aos="fade-right">
-            <img src="{% static "assets/img/about.jpg" %}" class="img-fluid" alt="">
+            <img src="assets/img/about.jpg" class="img-fluid" alt="">
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0 content" data-aos="fade-left">
-            <h3>Your comfort, our priority - Embracing the highest standards of care.</h3>
+            <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
             <p class="fst-italic">
-              Experience a new era of personalized healthcare, where cutting-edge technology and compassionate expertise come together to elevate your well-being to unprecedented heights.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+              magna aliqua.
             </p>
             <ul>
-              <li><i class="bi bi-check-circle"></i> Elevate your well-being with our exceptional care, where compassion meets cutting-edge technology for a healthier you.</li>
-              <li><i class="bi bi-check-circle"></i> Experience a new standard of healthcare excellence, driven by innovation and designed to nurture your vitality.</li>
-              <li><i class="bi bi-check-circle"></i> Unlock the potential of a healthier tomorrow with our personalized care, devoted to empowering your mind and body.</li>
+              <li><i class="bi bi-check-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+              <li><i class="bi bi-check-circle"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+              <li><i class="bi bi-check-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
             </ul>
             <p>
-              At Meditech, we are dedicated to shaping a better future for healthcare, one that revolves around you - our valued patient. With a steadfast commitment to excellence and innovation, we aspire to be your trusted partner on your journey to wellness. Embrace a brighter, healthier tomorrow with us by your side.
+              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+              culpa qui officia deserunt mollit anim id est laborum
             </p>
           </div>
         </div>
@@ -347,7 +309,7 @@
               <p>Expedita veritatis consequuntur nihil tempore laudantium vitae denat pacta</p>
             </div>
           </div>
-          {% comment %} <div class="image col-lg-6 order-1 order-lg-2" style='background-image: url("assets/img/features.jpg");' data-aos="zoom-in"></div> {% endcomment %}
+          <div class="image col-lg-6 order-1 order-lg-2" style='background-image: url("assets/img/features.jpg");' data-aos="zoom-in"></div>
         </div>
 
       </div>
@@ -359,39 +321,39 @@
 
         <div class="section-title">
           <h2>Services</h2>
-          <p>Discover our comprehensive range of services designed to cater to your diverse healthcare needs. With a focus on excellence and personalized care, we are committed to providing you with the highest standard of medical support and attention.</p>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
         </div>
 
         <div class="row">
           <div class="col-lg-4 col-md-6 icon-box" data-aos="zoom-in" data-aos-delay="100">
             <div class="icon"><i class="fas fa-heartbeat"></i></div>
-            <h4 class="title"><a href="">Heart Care</a></h4>
-            <p class="description"> Prioritizing your well-being with compassionate expertise and personalized support.</p>
+            <h4 class="title"><a href="">Lorem Ipsum</a></h4>
+            <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
           </div>
           <div class="col-lg-4 col-md-6 icon-box" data-aos="zoom-in" data-aos-delay="200">
             <div class="icon"><i class="fas fa-pills"></i></div>
-            <h4 class="title"><a href="">Medicinal Mastery</a></h4>
-            <p class="description">Delivering effective medications and treatments for your optimal health.</p>
+            <h4 class="title"><a href="">Dolor Sitema</a></h4>
+            <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
           </div>
           <div class="col-lg-4 col-md-6 icon-box" data-aos="zoom-in" data-aos-delay="300">
             <div class="icon"><i class="fas fa-hospital-user"></i></div>
-            <h4 class="title"><a href="">Patient-Centered Care</a></h4>
-            <p class="description">Putting you at the heart of our hospital services, ensuring your well-being is our top priority.</p>
+            <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
+            <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
           </div>
           <div class="col-lg-4 col-md-6 icon-box" data-aos="zoom-in" data-aos-delay="100">
             <div class="icon"><i class="fas fa-dna"></i></div>
-            <h4 class="title"><a href="">Unlocking Potential</a></h4>
-            <p class="description"> Harnessing genetic insights to drive personalized healthcare and wellbeing.</p>
+            <h4 class="title"><a href="">Magni Dolores</a></h4>
+            <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
           </div>
           <div class="col-lg-4 col-md-6 icon-box" data-aos="zoom-in" data-aos-delay="200">
             <div class="icon"><i class="fas fa-wheelchair"></i></div>
-            <h4 class="title"><a href="">Enhancing Mobility</a></h4>
-            <p class="description">Providing specialized care and support for improved mobility and independence.</p>
+            <h4 class="title"><a href="">Nemo Enim</a></h4>
+            <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
           </div>
           <div class="col-lg-4 col-md-6 icon-box" data-aos="zoom-in" data-aos-delay="300">
             <div class="icon"><i class="fas fa-notes-medical"></i></div>
-            <h4 class="title"><a href="">Comprehensive Documentation</a></h4>
-            <p class="description">Ensuring meticulous medical records for precise and personalized care.</p>
+            <h4 class="title"><a href="">Eiusmod Tempor</a></h4>
+            <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
           </div>
         </div>
 
@@ -404,11 +366,10 @@
 
         <div class="section-title">
           <h2>Make an Appointment</h2>
-          <p>Take the first step towards exceptional care by filling out our appointment form. Our dedicated team is eager to assist you and ensure your health needs are met with utmost convenience and personalized attention.</p>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
         </div>
 
-        <form id="appoinment_fix" action="/appoinment" method="post" role="form" class="php-email-form" data-aos="fade-up" data-aos-delay="100">
-          {% csrf_token %}
+        <form action="forms/appointment.php" method="post" role="form" class="php-email-form" data-aos="fade-up" data-aos-delay="100">
           <div class="row">
             <div class="col-md-4 form-group">
               <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
@@ -447,7 +408,7 @@
           </div>
           <div class="my-3">
             <div class="loading">Loading</div>
-            <div class="response-message-contact"></div>
+            <div class="error-message"></div>
             <div class="sent-message">Your appointment request has been sent successfully. Thank you!</div>
           </div>
           <div class="text-center"><button type="submit">Make an Appointment</button></div>
@@ -462,8 +423,7 @@
 
         <div class="section-title">
           <h2>Departments</h2>
-          <p>
-            Welcome to our comprehensive healthcare center, where we house a multitude of specialized departments, each dedicated to improving your overall well-being. From Cardiology to Gynecology, Orthopedics to Psychiatry, and many more, our expert teams are here to provide you with personalized care and advanced treatments tailored to your unique needs. With a wide range of medical specialties under one roof, we strive to ensure that you receive the best and most comprehensive care possible, all aimed at helping you lead a healthier and happier life.</p>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
         </div>
 
         <div class="row" data-aos="fade-up" data-aos-delay="100">
@@ -472,25 +432,25 @@
               <li class="nav-item">
                 <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#tab-1">
                   <h4>Cardiology</h4>
-                  <p>Your heart's health, our expertise - Comprehensive cardiac care for a healthier life.</p>
+                  <p>Quis excepturi porro totam sint earum quo nulla perspiciatis eius.</p>
                 </a>
               </li>
               <li class="nav-item mt-2">
                 <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-2">
                   <h4>Neurology</h4>
-                  <p>Unraveling neurological complexities, empowering brain health with advanced solutions.</p>
+                  <p>Voluptas vel esse repudiandae quo excepturi.</p>
                 </a>
               </li>
               <li class="nav-item mt-2">
                 <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-3">
                   <h4>Hepatology</h4>
-                  <p>Nurturing liver wellness, delivering personalized care for a healthier you.</p>
+                  <p>Velit veniam ipsa sit nihil blanditiis mollitia natus.</p>
                 </a>
               </li>
               <li class="nav-item mt-2">
                 <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-4">
                   <h4>Pediatrics</h4>
-                  <p>Caring for little hearts and minds, ensuring a bright and healthy future.</p>
+                  <p>Ratione hic sapiente nostrum doloremque illum nulla praesentium id</p>
                 </a>
               </li>
             </ul>
@@ -499,27 +459,27 @@
             <div class="tab-content">
               <div class="tab-pane active show" id="tab-1">
                 <h3>Cardiology</h3>
-                <p class="fst-italic">Welcome to our Cardiology Department, where your heart health is our top priority. </p>
-                <img src="{% static "assets/img/departments-1.jpg" %}" alt="" class="img-fluid">
-                <p>Our team of skilled cardiologists and specialists are dedicated to providing comprehensive care, advanced diagnostics, and cutting-edge treatments to ensure the well-being of your cardiovascular system. Whether you need preventive measures or management of heart conditions, rest assured that you are in capable and caring hands with our Cardiology Department.</p>
+                <p class="fst-italic">Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a videna mareta paulona marka</p>
+                <img src="assets/img/departments-1.jpg" alt="" class="img-fluid">
+                <p>Et nobis maiores eius. Voluptatibus ut enim blanditiis atque harum sint. Laborum eos ipsum ipsa odit magni. Incidunt hic ut molestiae aut qui. Est repellat minima eveniet eius et quis magni nihil. Consequatur dolorem quaerat quos qui similique accusamus nostrum rem vero</p>
               </div>
               <div class="tab-pane" id="tab-2">
                 <h3>Neurology</h3>
-                <p class="fst-italic">Step into our Neurology Department, where we unravel the complexities of the nervous system and provide tailored solutions for neurological conditions. </p>
-                <img src="{% static "assets/img/departments-2.jpg" %}" alt="" class="img-fluid">
-                <p>Our team of experienced neurologists utilizes state-of-the-art technology to diagnose and treat disorders, offering compassionate support and guidance throughout your journey to neurological wellness. Trust in our expertise to address your unique needs and improve your quality of life.</p>
+                <p class="fst-italic">Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a videna mareta paulona marka</p>
+                <img src="assets/img/departments-2.jpg" alt="" class="img-fluid">
+                <p>Et nobis maiores eius. Voluptatibus ut enim blanditiis atque harum sint. Laborum eos ipsum ipsa odit magni. Incidunt hic ut molestiae aut qui. Est repellat minima eveniet eius et quis magni nihil. Consequatur dolorem quaerat quos qui similique accusamus nostrum rem vero</p>
               </div>
               <div class="tab-pane" id="tab-3">
                 <h3>Hepatology</h3>
-                <p class="fst-italic">In our Hepatology Department, we prioritize liver health and its vital role in your overall well-being.</p>
-                <img src="{% static "assets/img/departments-3.jpg" %}" alt="" class="img-fluid">
-                <p>Our team of hepatologists specializes in diagnosing and managing liver diseases, offering personalized treatment plans and compassionate care. With a focus on improving liver function and enhancing your quality of life, we are dedicated to your liver health and overall wellness.</p>
+                <p class="fst-italic">Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a videna mareta paulona marka</p>
+                <img src="assets/img/departments-3.jpg" alt="" class="img-fluid">
+                <p>Et nobis maiores eius. Voluptatibus ut enim blanditiis atque harum sint. Laborum eos ipsum ipsa odit magni. Incidunt hic ut molestiae aut qui. Est repellat minima eveniet eius et quis magni nihil. Consequatur dolorem quaerat quos qui similique accusamus nostrum rem vero</p>
               </div>
               <div class="tab-pane" id="tab-4">
                 <h3>Pediatrics</h3>
-                <p class="fst-italic">Welcome to our Pediatrics Department, a place where young patients find comfort and care. </p>
-                <img src="{% static "assets/img/departments-4.jpg" %}" alt="" class="img-fluid">
-                <p>Our pediatricians and healthcare professionals are committed to ensuring the health and happiness of children. From routine check-ups to specialized treatments, we strive to create a nurturing environment for your little ones. Trust in our expertise and dedication as we accompany your child on their journey to a healthy and happy future.</p>
+                <p class="fst-italic">Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a videna mareta paulona marka</p>
+                <img src="assets/img/departments-4.jpg" alt="" class="img-fluid">
+                <p>Et nobis maiores eius. Voluptatibus ut enim blanditiis atque harum sint. Laborum eos ipsum ipsa odit magni. Incidunt hic ut molestiae aut qui. Est repellat minima eveniet eius et quis magni nihil. Consequatur dolorem quaerat quos qui similique accusamus nostrum rem vero</p>
               </div>
             </div>
           </div>
@@ -547,7 +507,7 @@
                   Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
-                <img src="{% static "assets/img/testimonials/testimonials-1.jpg" %}" class="testimonial-img" alt="">
+                <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
                 <h3>Saul Goodman</h3>
                 <h4>Ceo &amp; Founder</h4>
               </div>
@@ -560,7 +520,7 @@
                   Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
-                <img src="{% static "assets/img/testimonials/testimonials-2.jpg" %}" class="testimonial-img" alt="">
+                <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
                 <h3>Sara Wilsson</h3>
                 <h4>Designer</h4>
               </div>
@@ -573,7 +533,7 @@
                   Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
-                <img src="{% static "assets/img/testimonials/testimonials-3.jpg" %}" class="testimonial-img" alt="">
+                <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
                 <h3>Jena Karlis</h3>
                 <h4>Store Owner</h4>
               </div>
@@ -586,7 +546,7 @@
                   Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
-                <img src="{% static "assets/img/testimonials/testimonials-4.jpg" %}" class="testimonial-img" alt="">
+                <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
                 <h3>Matt Brandon</h3>
                 <h4>Freelancer</h4>
               </div>
@@ -599,7 +559,7 @@
                   Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
-                <img src="{% static "assets/img/testimonials/testimonials-5.jpg" %}" class="testimonial-img" alt="">
+                <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
                 <h3>John Larson</h3>
                 <h4>Entrepreneur</h4>
               </div>
@@ -626,7 +586,7 @@
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
             <div class="member" data-aos="fade-up" data-aos-delay="100">
               <div class="member-img">
-                <img src="{% static "assets/img/doctors/doctors-1.jpg" %}" class="img-fluid" alt="">
+                <img src="assets/img/doctors/doctors-1.jpg" class="img-fluid" alt="">
                 <div class="social">
                   <a href=""><i class="bi bi-twitter"></i></a>
                   <a href=""><i class="bi bi-facebook"></i></a>
@@ -644,7 +604,7 @@
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
             <div class="member" data-aos="fade-up" data-aos-delay="200">
               <div class="member-img">
-                <img src="{% static "assets/img/doctors/doctors-2.jpg" %}" class="img-fluid" alt="">
+                <img src="assets/img/doctors/doctors-2.jpg" class="img-fluid" alt="">
                 <div class="social">
                   <a href=""><i class="bi bi-twitter"></i></a>
                   <a href=""><i class="bi bi-facebook"></i></a>
@@ -662,7 +622,7 @@
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
             <div class="member" data-aos="fade-up" data-aos-delay="300">
               <div class="member-img">
-                <img src="{% static "assets/img/doctors/doctors-3.jpg" %}" class="img-fluid" alt="">
+                <img src="assets/img/doctors/doctors-3.jpg" class="img-fluid" alt="">
                 <div class="social">
                   <a href=""><i class="bi bi-twitter"></i></a>
                   <a href=""><i class="bi bi-facebook"></i></a>
@@ -680,7 +640,7 @@
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
             <div class="member" data-aos="fade-up" data-aos-delay="400">
               <div class="member-img">
-                <img src="{% static "assets/img/doctors/doctors-4.jpg" %}" class="img-fluid" alt="">
+                <img src="assets/img/doctors/doctors-4.jpg" class="img-fluid" alt="">
                 <div class="social">
                   <a href=""><i class="bi bi-twitter"></i></a>
                   <a href=""><i class="bi bi-facebook"></i></a>
@@ -711,14 +671,14 @@
 
         <div class="gallery-slider swiper">
           <div class="swiper-wrapper align-items-center">
-            <div class="swiper-slide"><a class="gallery-lightbox" href="{% static "assets/img/gallery/gallery-1.jpg" %}"><img src="{% static "assets/img/gallery/gallery-1.jpg" %}" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a class="gallery-lightbox" href="{% static "assets/img/gallery/gallery-2.jpg" %}"><img src="{% static "assets/img/gallery/gallery-2.jpg" %}" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a class="gallery-lightbox" href="{% static "assets/img/gallery/gallery-3.jpg" %}"><img src="{% static "assets/img/gallery/gallery-3.jpg" %}" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a class="gallery-lightbox" href="{% static "assets/img/gallery/gallery-4.jpg" %}"><img src="{% static "assets/img/gallery/gallery-4.jpg" %}" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a class="gallery-lightbox" href="{% static "assets/img/gallery/gallery-5.jpg" %}"><img src="{% static "assets/img/gallery/gallery-5.jpg" %}" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a class="gallery-lightbox" href="{% static "assets/img/gallery/gallery-6.jpg" %}"><img src="{% static "assets/img/gallery/gallery-6.jpg" %}" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a class="gallery-lightbox" href="{% static "assets/img/gallery/gallery-7.jpg" %}"><img src="{% static "assets/img/gallery/gallery-7.jpg" %}" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a class="gallery-lightbox" href="{% static "assets/img/gallery/gallery-8.jpg" %}"><img src="{% static "assets/img/gallery/gallery-8.jpg" %}" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="gallery-lightbox" href="assets/img/gallery/gallery-1.jpg"><img src="assets/img/gallery/gallery-1.jpg" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="gallery-lightbox" href="assets/img/gallery/gallery-2.jpg"><img src="assets/img/gallery/gallery-2.jpg" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="gallery-lightbox" href="assets/img/gallery/gallery-3.jpg"><img src="assets/img/gallery/gallery-3.jpg" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="gallery-lightbox" href="assets/img/gallery/gallery-4.jpg"><img src="assets/img/gallery/gallery-4.jpg" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="gallery-lightbox" href="assets/img/gallery/gallery-5.jpg"><img src="assets/img/gallery/gallery-5.jpg" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="gallery-lightbox" href="assets/img/gallery/gallery-6.jpg"><img src="assets/img/gallery/gallery-6.jpg" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="gallery-lightbox" href="assets/img/gallery/gallery-7.jpg"><img src="assets/img/gallery/gallery-7.jpg" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="gallery-lightbox" href="assets/img/gallery/gallery-8.jpg"><img src="assets/img/gallery/gallery-8.jpg" class="img-fluid" alt=""></a></div>
           </div>
           <div class="swiper-pagination"></div>
         </div>
@@ -817,59 +777,62 @@
 
         <div class="section-title">
           <h2>Frequently Asked Questioins</h2>
-          <p>Welcome to the world of Smart Healthcare, where technology and compassion converge to redefine the way you experience healthcare. This revolutionary approach combines cutting-edge technologies like AI, IoT devices, and data analytics to offer personalized, proactive, and efficient care. With a focus on preventive measures, continuous monitoring, and data-driven insights, Smart Healthcare empowers you to take charge of your health like never before. Discover the possibilities, as we answer some of the most common questions about the benefits and security of Smart Healthcare.</p>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
         </div>
 
         <ul class="faq-list">
 
           <li>
-            <div data-bs-toggle="collapse" class="collapsed question" href="#faq1">What is smart healthcare, and how does it differ from traditional healthcare?<i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+            <div data-bs-toggle="collapse" class="collapsed question" href="#faq1">Non consectetur a erat nam at lectus urna duis? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
             <div id="faq1" class="collapse" data-bs-parent=".faq-list">
               <p>
-                Smart healthcare utilizes cutting-edge technologies such as AI, IoT devices, and data analytics to provide personalized and proactive care. Unlike traditional healthcare, which is more reactive and generalized, smart healthcare leverages data to offer more precise diagnoses, continuous monitoring, and personalized treatment plans, ultimately leading to better health outcomes.
+                Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
               </p>
             </div>
           </li>
 
           <li>
-            <div data-bs-toggle="collapse" href="#faq2" class="collapsed question">How can smart healthcare improve patient outcomes? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+            <div data-bs-toggle="collapse" href="#faq2" class="collapsed question">Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
             <div id="faq2" class="collapse" data-bs-parent=".faq-list">
               <p>
-                Smart healthcare enables continuous monitoring of patient health data, allowing for early detection of potential issues and timely interventions. Personalized treatment plans based on individual data can lead to more effective and targeted therapies, resulting in improved patient outcomes and overall well-being.
+                Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
               </p>
             </div>
           </li>
 
           <li>
-            <div data-bs-toggle="collapse" href="#faq3" class="collapsed question">Is my health data safe in a smart healthcare system?<i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+            <div data-bs-toggle="collapse" href="#faq3" class="collapsed question">Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
             <div id="faq3" class="collapse" data-bs-parent=".faq-list">
               <p>
-                Yes, patient data security is of utmost importance in smart healthcare systems. Robust encryption, secure storage, and strict privacy measures are implemented to safeguard sensitive health information. Compliance with data protection regulations ensures that your data remains confidential and accessible only to authorized healthcare professionals.
+                Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
               </p>
             </div>
           </li>
 
           <li>
-            <div data-bs-toggle="collapse" href="#faq4" class="collapsed question">How does smart healthcare enhance patient engagement? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+            <div data-bs-toggle="collapse" href="#faq4" class="collapsed question">Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
             <div id="faq4" class="collapse" data-bs-parent=".faq-list">
               <p>
-                Smart healthcare systems often provide patients with access to their health data and real-time updates through user-friendly apps and portals. This empowers patients to actively participate in their healthcare journey, track progress, and make informed decisions, leading to improved engagement and adherence to treatment plans.              </p>
+                Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+              </p>
             </div>
           </li>
 
           <li>
-            <div data-bs-toggle="collapse" href="#faq5" class="collapsed question">Can smart healthcare systems assist with preventive care? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+            <div data-bs-toggle="collapse" href="#faq5" class="collapsed question">Tempus quam pellentesque nec nam aliquam sem et tortor consequat? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
             <div id="faq5" class="collapse" data-bs-parent=".faq-list">
               <p>
-                Absolutely. Smart healthcare emphasizes preventive care by continuously monitoring patient data and identifying potential risk factors. By detecting early warning signs and providing personalized lifestyle recommendations, smart healthcare can help prevent the onset of chronic conditions and promote overall wellness.              </p>
+                Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in
+              </p>
             </div>
           </li>
 
           <li>
-            <div data-bs-toggle="collapse" href="#faq6" class="collapsed question">Will smart healthcare systems replace human healthcare providers? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+            <div data-bs-toggle="collapse" href="#faq6" class="collapsed question">Tortor vitae purus faucibus ornare. Varius vel pharetra vel turpis nunc eget lorem dolor? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
             <div id="faq6" class="collapse" data-bs-parent=".faq-list">
               <p>
-                Smart healthcare systems are designed to complement human healthcare providers, not replace them. While technology enhances efficiency and decision-making, the expertise and compassion of healthcare professionals remain invaluable in delivering personalized care and understanding patients' unique needs. Smart healthcare systems work in tandem with healthcare providers to create a comprehensive and patient-centric approach to healthcare.              </p>
+                Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo integer malesuada nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc eget lorem dolor sed. Ut venenatis tellus in metus vulputate eu scelerisque. Pellentesque diam volutpat commodo sed egestas egestas fringilla phasellus faucibus. Nibh tellus molestie nunc non blandit massa enim nec.
+              </p>
             </div>
           </li>
 
@@ -884,13 +847,13 @@
 
         <div class="section-title">
           <h2>Contact</h2>
-          <p>For any inquiries or appointments, feel free to reach out to us. Our friendly and knowledgeable staff is ready to assist you with any questions you may have or to schedule your visit to our healthcare center. Your well-being is our priority, and we are here to provide you with the support and care you need.</p>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
         </div>
 
       </div>
 
       <div>
-        <iframe style="border:0; width: 100%; height: 350px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3650.5821981174904!2d90.44713507353813!3d23.797887786955005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c7d8042caf2d%3A0x686fa3e360361ddf!2sUnited%20International%20University!5e0!3m2!1sen!2sbd!4v1689837847107!5m2!1sen!2sbd" frameborder="0" allowfullscreen></iframe>
+        <iframe style="border:0; width: 100%; height: 350px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" allowfullscreen></iframe>
       </div>
 
       <div class="container">
@@ -904,21 +867,21 @@
                 <div class="info-box">
                   <i class="bx bx-map"></i>
                   <h3>Our Address</h3>
-                  <p>United City, Madani Ave, Dhaka 1212</p>
+                  <p>A108 Adam Street, New York, NY 535022</p>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="info-box mt-4">
                   <i class="bx bx-envelope"></i>
                   <h3>Email Us</h3>
-                  <p>uiu@servcie.com<br>contact@meditech.com</p>
+                  <p>info@example.com<br>contact@example.com</p>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="info-box mt-4">
                   <i class="bx bx-phone-call"></i>
                   <h3>Call Us</h3>
-                  <p>+8801818434258<br>+8801638234787</p>
+                  <p>+1 5589 55488 55<br>+1 6678 254445 41</p>
                 </div>
               </div>
             </div>
@@ -926,8 +889,7 @@
           </div>
 
           <div class="col-lg-6">
-            <form id="contact_care" action="/contact" method="post" role="form" class="php-email-form">
-              {% csrf_token %}
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
               <div class="row">
                 <div class="col-md-6 form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required="">
@@ -966,12 +928,12 @@
 
           <div class="col-lg-3 col-md-6">
             <div class="footer-info">
-              <h3>MediTech</h3>
+              <h3>Medicio</h3>
               <p>
-                United City, Madani Ave, <br>
-                Dhaka 1212<br><br>
-                <strong>Phone:</strong> +8801234567890<br>
-                <strong>Email:</strong> health@bd.com<br>
+                A108 Adam Street <br>
+                NY 535022, USA<br><br>
+                <strong>Phone:</strong> +1 5589 55488 55<br>
+                <strong>Email:</strong> info@example.com<br>
               </p>
               <div class="social-links mt-3">
                 <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
@@ -1007,7 +969,7 @@
 
           <div class="col-lg-4 col-md-6 footer-newsletter">
             <h4>Our Newsletter</h4>
-            <p>Subscribe us to see latest offer and news.</p>
+            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
             <form action="" method="post">
               <input type="email" name="email"><input type="submit" value="Subscribe">
             </form>
@@ -1018,25 +980,33 @@
       </div>
     </div>
 
-   
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Medicio</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/medicio-free-bootstrap-theme/ -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
   </footer><!-- End Footer -->
 
   <div id="preloader"></div>
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
-  <script src="{% static "assets/vendor/purecounter/purecounter_vanilla.js" %}"></script>
-  <script src="{% static "assets/vendor/aos/aos.js" %}"></script>
-  <script src="{% static "assets/vendor/bootstrap/js/bootstrap.bundle.min.js" %}"></script>
-  <script src="{% static "assets/vendor/glightbox/js/glightbox.min.js" %}"></script>
-  <script src="{% static "assets/vendor/swiper/swiper-bundle.min.js" %}"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
 
   <!-- Template Main JS File -->
-  <script src="{% static "assets/js/main.js" %}"></script>
-
-  {% comment %} Appoinment js file {% endcomment %}
-  <script src="{% static "assets\Javascript\appoinment.js" %}"></script>
-  <script src="{% static "assets\Javascript\contact.js" %}"></script>
+  <script src="assets/js/main.js"></script>
 
 </body>
 
